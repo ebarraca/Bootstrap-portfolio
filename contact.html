@@ -2,65 +2,108 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Erica Barraca</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+ <meta charset="UTF-8">
+ <title>Erica Barraca Bootstrap Portfolio</title>
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
-<body>
+<body class="container-fluid">
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Erica Barraca</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Erica Barraca</a>
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
 
-    </section>
+ 
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
 
-        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="page-header">
+        <h1>Contact Me</h1>
       </div>
-    </section>
-  </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 2017 Erica Barraca
-    </div>
-  </footer>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+        </div>
+      
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="yourname@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleTextarea">Message</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>  <!-- close column 8 -->
+  </div>
+ 
+
+         
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Let's Connect</div>
+          <div class="panel-body">
+            <section class="sidebar">
+              <a href="https://github.com/ebarraca"><img src="assets/images/github-128.png" class="social" alt="GitHub" height="55" width="55" /></a>
+              <a href="https://www.linkedin.com/in/erica-barraca-25614a8a/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" height="55" width="55"  /></a>
+              <a href="https://stackoverflow.com/?newreg=c116d5d2ffe64b5daacdc34c60539412"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" height="55" width="55" /></a>
+            </section>      
+          </div>
+        </div> 
+      </div>
+   </div>   <!-- row -->
+
+
+ <footer class="container-fluid bg-4 text-center">
+  <p>Copyright ©2017 Erica Barraca </p> 
+ </footer>
+   
+
 </body>
 
 </html>
